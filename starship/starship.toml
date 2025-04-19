@@ -13,7 +13,7 @@ format = """\
 $directory\
 ${custom.directory_separator_not_git}\
 ${custom.directory_separator_git}\
-$symbol($git_branch[](fg:#17E69A))\
+$symbol($git_branch[](fg:#F0C6C6))\
 $symbol( $git_commit$git_status$git_metrics$git_state)$fill$cmd_duration$nodejs$all\
 ${custom.git_config_email}
 $character"""
@@ -29,13 +29,13 @@ disabled = true
 # Customize the format of the working directory
 [directory]
 truncate_to_repo = true
-format = "[󰣇 $path]($style)"
+format = "[󰣇 $path ]($style)"
 style = "fg:#000b1e bg:#17E69A"
 
 [git_branch]
 symbol = " "
 format = "[ $symbol$branch(:$remote_branch) ]($style)"
-style = "fg:#000b1e bg:#17E69A"
+style = "fg:#000b1e bg:#f0C6C6"
 
 [git_metrics]
 disabled = false
@@ -53,7 +53,7 @@ display_private = true
 [cmd_duration]
 min_time = 2_000
 format = "[  $duration ]($style)"
-style = "white"
+style = "fg:white"
 
 # Customize the battery indicator
 [battery]
@@ -71,6 +71,7 @@ style = 'red'
 description = "Output the current git user's configured email address."
 command = "git config user.email"
 format = "\n[$symbol(  $output)]($style)"
+
 # Only when inside git repository
 when = "git rev-parse --is-inside-work-tree >/dev/null 2>&1"
 style = "text"
@@ -79,7 +80,7 @@ style = "text"
 [custom.directory_separator_git]
 description = "Output a styled separator right after the directory when inside a git repository."
 command = ""
-format = "[](fg:#000b1e bg:#17E69A)"
+format = "[](fg:#17E69A bg:#f0c6c6)"
 # Only when inside git repository
 when = "git rev-parse --is-inside-work-tree >/dev/null 2>&1"
 
