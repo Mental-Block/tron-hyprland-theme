@@ -1,0 +1,104 @@
+*{
+    spacing: 0;
+    v-primary-bg: rgba(2,24,47,0.7);
+    v-secondary-bg: rgba(242, 242, 242, 0.8);
+    v-primary: #18cae6;
+    v-secondary: #17E69A; 
+}
+
+/*****----- Configuration -----*****/
+configuration {
+    font: "SpaceMono Nerd Font normal 12";
+    modi: "drun"; 
+    show-icons:                 true;
+    display-drun:               "🔍";
+    drun-display-format:        "{name}";
+}
+
+window {
+  background-color: @v-primary-bg;
+  border-color: @v-primary;
+  border-radius: 12px;
+  width: 512px;
+}
+
+inputbar {
+  background-color: @v-primary-bg;
+  margin: 14px;
+  border-radius: 12px;
+  /* children: [prompt, entry]; */
+  children: [ entry ];
+  border: none;
+}
+
+prompt {
+  padding: 16px;
+  /* border: 0 1px 0 0; */
+}
+
+textbox {
+  background: transparent;
+  color: @v-primary;
+  padding: 8px 16px;
+  blink: true;
+}
+
+entry {
+  color: @v-primary;
+  expand: false;
+  padding: 10px;
+}
+
+listview {
+  fixed-height: false;
+  lines: 8;
+  spacing: 6px;
+  cycle: false;
+  scrollbar: true;
+  dynamic: true;
+  border: none;
+  margin: 0 0 8px 0;
+}
+
+scrollbar {
+  handle-color: @v-primary-bg;
+  handle-width: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+element {
+  margin: 0 0 0 8px;
+}
+
+element alternate.normal,
+element alternate.normal,
+element normal.normal,
+element normal.normal {
+  /* border: 0 0 1px 0; */
+  /* padding: 4px; */
+  background-color: transparent;
+}
+
+element selected.normal,
+element selected.urgent {
+  background-color: @v-primary-bg;
+  border-radius: 12px;
+}
+
+element-text {
+  text-outline:none;
+  font-shadow:none;
+  color: @v-primary;
+  vertical-align: 0.5;
+}
+
+element-text selected {
+  color: @v-secondary;
+}
+
+element-icon {
+  size: 48px;
+  margin: 4px;
+}
+
