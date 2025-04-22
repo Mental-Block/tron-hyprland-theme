@@ -1,0 +1,37 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    // "height": 42,// Waybar height (to be removed for auto height)
+    "width": 1430, // Waybar width
+    "spacing": 5, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+        "custom/arch",
+        "cpu",
+        "temperature",
+        "battery",
+        "power-profiles-daemon",
+        "custom/cava_mviz",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "idle_inhibitor",
+        "pulseaudio",
+        "backlight",
+        "network",
+        "bluetooth",
+        "custom/swaync",
+        "clock",
+        "custom/power"
+    ],
+    //Modules configuration
+    
+    "include": [
+		"~/.config/waybar/modules.json"
+	]
+}
+
