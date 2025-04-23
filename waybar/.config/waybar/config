@@ -7,7 +7,7 @@
     "spacing": 5, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "custom/arch",
+        "custom/logo",
         "cpu",
         "temperature",
         "battery",
@@ -21,6 +21,7 @@
     "modules-right": [
         "idle_inhibitor",
         "pulseaudio",
+        "pulseaudio/microphone",
         "backlight",
         "network",
         "bluetooth",

@@ -1,8 +1,15 @@
 #Hyperland TRON themed Desktop Enviroment
 
-This is a custom riced arch linux desktop enviroment of one of my favourite childhood movies.  
+This is a custom riced arch linux enviroment of one of my favourite childhood movies with the software I use on a daily basis like vim, timeshift, GIMP, yazi and etc... 
 
 ## Preview
+
+[./Preview/login.png]
+
+[./Preview/lock.png]
+
+
+
 
 ## Set up Instructions
 
@@ -20,7 +27,18 @@ makepkg -si
 
 ### Install Dependancies
 
-`yay -S `
+```
+yay -S 7zip acpi base base-devel bluetui brightnessctl cava clipse
+fd fzf fastfetch glfw gvfs-mtp htop hypridle hyprland hyprlock hyprpaper hyprpicker-git hyprpolkitagent hyprshot imagemagick kitty less librewolf-bin mpv-mpris nvtop otf-font-awesome pamixer pavucontrol pipewire-alsa pipewire-pulse power-profiles-daemon pulseaudio-alsa resvg ripgrep rofi-wayland scdoc sddm sof-firmware starship swaync-git, ttf-font-awesome, ttf-space-mono-nerd umockdev unzip waybar xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xorg-xhost xorg-xinit xwaylandvideobridge yad yazi
+```
+
+### non configured applications/tools - optional
+
+This is just a collection of extra tools and applications installed on my machine but are not needed for the GUI to work. 
+
+```
+yay -S gimp kdeconnect linux linux-firmware timeshift vi vim yt-dlp zoxid amd-code bc inxi
+```
 
 ### Download dotfiles 
 
@@ -29,7 +47,12 @@ git clone https://github.com/Mental-Block/tron-hyprland-theme.git
 cd tron-hyprland-theme
 ```
 
-Copy the folders to the "~/.config/" directory or create a symlink with GNU `stow`. GNU stow is recommended.
+Copy the packages of ".config" to the "~/.config" directory or using the recommend method of creating a symlink with GNU `stow`.
+
+```
+yay -S stow 
+stow .
+```
 
 ### Move sddm-tron-theme 
 

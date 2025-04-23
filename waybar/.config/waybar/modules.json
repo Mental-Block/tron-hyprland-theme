@@ -1,9 +1,9 @@
 {
-    "custom/arch": {
-        "format": "󰣇",
+    "custom/logo": {
+        "format": " ",
         "on-click": "rofi -show drun",
         "tooltip": true,
-        "tooltip-format": "btw :)"
+        "tooltip-format": "Tron Lives"
     },
     "custom/cava_mviz": {
 	"exec": "~/.config/waybar/WaybarCava.sh",
@@ -93,7 +93,8 @@
 	"max-length": 24,
 	"format-icons": [
 		"󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
-	]
+	],
+	"on-click": "kitty nmtui &"
 },
     "cpu": {
         "format": "  {usage}%",
@@ -154,7 +155,7 @@
 	"tooltip-format-connected": "{device_enumerate}",
 	"tooltip-format-enumerate-connected": " {device_alias} 󰂄{device_battery_percentage}%",
 	"tooltip": true,
-	"on-click": "blueberry"
+	"on-click": "kitty bluetui &"
 },
 "backlight": {
 	"interval": 2,

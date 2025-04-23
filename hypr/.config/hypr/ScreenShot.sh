@@ -1,12 +1,12 @@
 
 # Screenshots scripts
 
-iDIR="$HOME/.config/swaync/icons"
-sDIR="$HOME/.config/hypr/"
+iDIR="$HOME.config/swaync/icons"
+sDIR="$HOME.config/hypr/"
 notify_cmd_shot="notify-send -h string:x-canonical-private-synchronous:shot-notify -u low -i ${iDIR}/picture.png"
 
 time=$(date +"%d-%m-%Y_%H-%M-%S")
-dir="$(xdg-user-dir)/Pictures/Screenshots"
+dir="$HOME/Pictures/Screenshots"
 file="Screenshot_${time}.png"
 
 active_window_class=$(hyprctl -j activewindow | jq -r '(.class)')
@@ -18,10 +18,8 @@ notify_view() {
     if [[ "$1" == "active" ]]; then
         if [[ -e "${active_window_path}" ]]; then
             ${notify_cmd_shot} "Screenshot of '${active_window_class}' Saved."
-            "${sDIR}/Sounds.sh" --screenshot
         else
             ${notify_cmd_shot} "Screenshot of '${active_window_class}' not Saved"
-            "${sDIR}/Sounds.sh" --error
         fi
     elif [[ "$1" == "swappy" ]]; then
 		${notify_cmd_shot} "Screenshot Captured."
@@ -29,10 +27,8 @@ notify_view() {
         local check_file="$dir/$file"
         if [[ -e "$check_file" ]]; then
             ${notify_cmd_shot} "Screenshot Saved."
-            "${sDIR}/Sounds.sh" --screenshot
         else
             ${notify_cmd_shot} "Screenshot NOT Saved."
-            "${sDIR}/Sounds.sh" --error
         fi
     fi
 }
@@ -97,7 +93,7 @@ shotactive() {
 
 shotswappy() {
 	tmpfile=$(mktemp)
-	grim -g "$(slurp)" - >"$tmpfile" && "${sDIR}/Sounds.sh" --screenshot && notify_view "swappy"
+	grim -g "$(slurp)" - >"$tmpfile" && notify_view "swappy"
 	swappy -f - <"$tmpfile"
 	rm "$tmpfile"
 }

@@ -100,18 +100,23 @@ window#waybar.empty #window {
   border-radius: 7rem;
 }
 
-#custom-arch {
+#custom-logo {
     font-family: "Spacemono Nerd Font";
-    margin-left: 5px;
-    padding: 0 10px;
-    font-size: 25px;
+    margin-left: 12px;
+    padding: 0 16px;
+    font-size: 15px;
     background-color: transparent;
     border-radius: 7rem;
-	/*border-width: 2px;
-	border-style: solid;
-	border-color: @teal;*/
+    background-image: url('./logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-#custom-arch:hover {
+#custom-logo:hover {
+    background-image: url('./logo1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-color: @maroon;
     color: @brown;
 }
