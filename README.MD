@@ -4,12 +4,8 @@ This is a custom riced arch linux enviroment of one of my favourite childhood mo
 
 ## Preview
 
-[./Preview/login.png]
-
-[./Preview/lock.png]
-
-
-
+![login screen](./Preview/login.png)
+![preview screen](./Preview/lock.png)
 
 ## Set up Instructions
 
@@ -28,8 +24,7 @@ makepkg -si
 ### Install Dependancies
 
 ```
-yay -S 7zip acpi base base-devel bluetui brightnessctl cava clipse
-fd fzf fastfetch glfw gvfs-mtp htop hypridle hyprland hyprlock hyprpaper hyprpicker-git hyprpolkitagent hyprshot imagemagick kitty less librewolf-bin mpv-mpris nvtop otf-font-awesome pamixer pavucontrol pipewire-alsa pipewire-pulse power-profiles-daemon pulseaudio-alsa resvg ripgrep rofi-wayland scdoc sddm sof-firmware starship swaync-git, ttf-font-awesome, ttf-space-mono-nerd umockdev unzip waybar xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xorg-xhost xorg-xinit xwaylandvideobridge yad yazi
+yay -S 7zip acpi base base-devel bluetui brightnessctl cava clipse fd fzf fastfetch glfw gvfs-mtp htop hypridle hyprland hyprlock hyprpaper hyprpicker-git hyprpolkitagent hyprshot imagemagick kitty less librewolf-bin mpv-mpris nvtop otf-font-awesome pamixer pavucontrol pipewire-alsa pipewire-pulse power-profiles-daemon pulseaudio-alsa resvg ripgrep rofi-wayland scdoc sddm sof-firmware starship swaync-git, ttf-font-awesome, ttf-space-mono-nerd umockdev unzip waybar xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xorg-xhost xorg-xinit xwaylandvideobridge yad yazi
 ```
 
 ### non configured applications/tools - optional
