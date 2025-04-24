@@ -84,7 +84,7 @@
                 },
                 {
                     "label": "󰂯",
-                    "command": "blueberry"
+                    "command": "kitty bluetui &"
                 }
             ]
         }

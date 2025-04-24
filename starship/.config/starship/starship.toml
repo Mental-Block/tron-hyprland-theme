@@ -4,16 +4,13 @@ add_newline = true
 # Increase the default command timeout to 2 seconds
 command_timeout = 2000
 
-# Place this line directly under the `command_timeout` entry at the top of the file
-palette = "catppuccin_macchiato"
-
 # Define the order and format of the information in our prompt
 format = """\
-[](fg:#17E69A)\
+[](fg:#18CAE6)\
 $directory\
 ${custom.directory_separator_not_git}\
 ${custom.directory_separator_git}\
-$symbol($git_branch[](fg:#F0C6C6))\
+$symbol($git_branch[](fg:#FFEA00))\
 $symbol( $git_commit$git_status$git_metrics$git_state)$fill$cmd_duration$nodejs$all\
 ${custom.git_config_email}
 $character"""
@@ -30,19 +27,19 @@ disabled = true
 [directory]
 truncate_to_repo = true
 format = "[󰣇 $path ]($style)"
-style = "fg:#000b1e bg:#17E69A"
+style = "fg:#000b1e bg:#18CAE6"
 
 [git_branch]
 symbol = " "
 format = "[ $symbol$branch(:$remote_branch) ]($style)"
-style = "fg:#000b1e bg:#f0C6C6"
+style = "fg:#000b1e bg:#FFEA00"
 
 [git_metrics]
 disabled = false
 
 [nodejs]
 format = "via [$symbol($version )]($style)"
-style = "yellow"
+style = "#000B1E"
 
 [package]
 disabled = true # Enable to output the current working directory's package version
@@ -53,7 +50,7 @@ display_private = true
 [cmd_duration]
 min_time = 2_000
 format = "[   $duration ]($style)"
-style = "fg:#17E69A"
+style = "fg:#18CAE6"
 
 # Customize the battery indicator
 [battery]
@@ -64,7 +61,7 @@ full_symbol = '🔋'
 
 [[battery.display]]
 threshold = 10
-style = 'red'
+style = '#FF410D'
 
 # Output the current git config email address
 [custom.git_config_email]
@@ -80,7 +77,7 @@ style = "text"
 [custom.directory_separator_git]
 description = "Output a styled separator right after the directory when inside a git repository."
 command = ""
-format = "[](fg:#17E69A bg:#f0c6c6)"
+format = "[](fg:#18CAE6 bg:#FFEA00)"
 # Only when inside git repository
 when = "git rev-parse --is-inside-work-tree >/dev/null 2>&1"
 
@@ -88,36 +85,7 @@ when = "git rev-parse --is-inside-work-tree >/dev/null 2>&1"
 [custom.directory_separator_not_git]
 description = "Output a styled separator right after the directory when NOT inside a git repository."
 command = ""
-format = "[](fg:#17E69A)"
+format = "[](fg:#18CAE6)"
 # Only when NOT inside a git repository
 when = "! git rev-parse --is-inside-work-tree > /dev/null 2>&1"
-
-[palettes.catppuccin_macchiato]
-rosewater = "#f4dbd6"
-flamingo = "#f0c6c6"
-pink = "#f5bde6"
-mauve = "#c6a0f6"
-red = "#ed8796"
-maroon = "#ee99a0"
-peach = "#f5a97f"
-yellow = "#eed49f"
-green = "#a6da95"
-teal = "#8bd5ca"
-sky = "#91d7e3"
-sapphire = "#7dc4e4"
-blue = "#8aadf4"
-lavender = "#18cea6"
-# "#b7bdf8"
-text = "#cad3f5"
-subtext1 = "#b8c0e0"
-subtext0 = "#a5adcb"
-overlay2 = "#939ab7"
-overlay1 = "#8087a2"
-overlay0 = "#6e738d"
-surface2 = "#5b6078"
-surface1 = "#494d64"
-surface0 = "#363a4f"
-base = "#24273a"
-mantle = "#1e2030"
-crust = "#181926"
 

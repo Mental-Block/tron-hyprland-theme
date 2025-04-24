@@ -1,4 +1,4 @@
-#Hyperland TRON themed Desktop Enviroment
+# Hyperland TRON themed Desktop Enviroment
 
 This is a custom riced arch linux enviroment of one of my favourite childhood movies with the software I use on a daily basis like vim, timeshift, GIMP, yazi and etc... 
 
@@ -27,7 +27,7 @@ makepkg -si
 yay -S 7zip acpi base base-devel bluetui brightnessctl cava clipse fd fzf fastfetch glfw gvfs-mtp htop hypridle hyprland hyprlock hyprpaper hyprpicker-git hyprpolkitagent hyprshot imagemagick kitty less librewolf-bin mpv-mpris nvtop otf-font-awesome pamixer pavucontrol pipewire-alsa pipewire-pulse power-profiles-daemon pulseaudio-alsa resvg ripgrep rofi-wayland scdoc sddm sof-firmware starship swaync-git, ttf-font-awesome, ttf-space-mono-nerd umockdev unzip waybar xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xorg-xhost xorg-xinit xwaylandvideobridge yad yazi
 ```
 
-### non configured applications/tools - optional
+### Non configured applications/tools - optional
 
 This is just a collection of extra tools and applications installed on my machine but are not needed for the GUI to work. 
 
@@ -61,7 +61,7 @@ cp -r ~/.config/sddm-tron-theme /usr/share/sddm/themes/
 
 Stow:
 ```
-  stow -d="sddm-tron-theme" -t="/usr/share/sddm/themes/"
+stow -d="sddm-tron-theme" -t="/usr/share/sddm/themes/"
 ```
 
 If the file exists you will have to manually edit "sddm.conf"
@@ -93,12 +93,7 @@ stow -d="Fonts" -t="/user/share/fonts"
 Having Issues: 
 https://wiki.archlinux.org/title/Fonts
 
-## Todo 
 
-- kitty term theming
-- starship theming
-- yazi theming
-- hypr wallpaper, auto wallPaperChange not working
 
 
 

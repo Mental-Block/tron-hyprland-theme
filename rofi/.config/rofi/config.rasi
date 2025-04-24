@@ -3,7 +3,7 @@
     v-primary-bg: rgba(2,24,47,0.7);
     v-secondary-bg: rgba(242, 242, 242, 0.8);
     v-primary: #18cae6;
-    v-secondary: #17E69A; 
+    v-secondary: #39FF14; 
 }
 
 /*****----- Configuration -----*****/

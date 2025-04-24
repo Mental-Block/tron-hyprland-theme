@@ -106,7 +106,8 @@
         "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon4/temp1_input",
         "critical-threshold": 100,
         "format-critical": " {temperatureC}",
-        "format": " {temperatureC}°C"
+        "format": " {temperatureC}°C",
+	"on-click": "kitty nvtop &"
     },
     "battery": {
         "states": {

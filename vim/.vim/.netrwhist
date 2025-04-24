@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/aaron'
+let g:netrw_dirhist_2='/home/aaron/.dotfiles/kitty/.config/kitty'
+let g:netrw_dirhist_1='/home/aaron'

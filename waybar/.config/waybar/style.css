@@ -6,10 +6,10 @@
 
 window#waybar {
     background: RGBA(2, 24, 47, 0.7); 
-    color: @teal;
+    color: @teal; 
     border-width: 2px;
-    border-color: @teal;
-    border-style: solid;
+    border-style:solid;
+    border-color:@teal;
     border-radius: 7rem;
 }
 
@@ -147,34 +147,8 @@ window#waybar.empty #window {
     background-color: @maroon;
     color: @brown;
 }
-/*
-#taskbar {
-}
 
-#taskbar button {
-	border-radius: 7rem;
-	background: transparent;
-	border-width: 2px;
-	border-style: solid;
-	border-color: @teal;
-	margin-left: 2px;
-	margin-right: 2px;
-	padding-left: 8px;
-	padding-right: 8px;
-	color: @text;
-}
-
-#taskbar button.active {
-	border-radius: 7rem;
-	background-color: @surface0;
-	border-width: 2px;
-	border-style: solid;
-	border-color: @teal;
-}
-*/
-
-
-  #window {
+#window {
   font-family: "Spacemono Nerd Font";
   border-radius: 7rem;
   /*border-width: 2px;

@@ -1,16 +1,15 @@
-#!/bin/sh
+#!/bin/bash
 
-WALLPAPER_DIR="$HOME/.config/wallpaper"
+directory=~/.config/wallpaper
+ext=*.png
 
-OLDIFS=$IFS
-IFS=$'\n'
-for wallpaper in $(hyprctl hyprpaper listloaded); do
-	hyprctl hyprpaper unload "$wallpaper"
-done
-IFS=$OLDIFS
+monitor=`hyprctl monitors | grep Monitor | awk '{print $2}'`
 
-for display in $(hyprctl monitors | grep "Monitor" | cut -d " " -f 2); do
-	wallpaper="$(find "$WALLPAPER_DIR" -type f | shuf -n 1)"
-	hyprctl hyprpaper preload "$wallpaper"
-	hyprctl hyprpaper wallpaper "$display,$wallpaper"
-done
+if [ -d "$directory" ]; then
+    random_background=$(ls $directory/$ext | shuf -n 1)
+
+    hyprctl hyprpaper unload all
+    hyprctl hyprpaper preload $random_background
+    hyprctl hyprpaper wallpaper "$monitor, $random_background"
+
+fi
