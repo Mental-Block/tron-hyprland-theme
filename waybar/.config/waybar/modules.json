@@ -107,7 +107,7 @@
         "critical-threshold": 100,
         "format-critical": " {temperatureC}",
         "format": " {temperatureC}°C",
-	"on-click": "kitty nvtop &"
+	"on-click": "kitty nvtop -C &"
     },
     "battery": {
         "states": {

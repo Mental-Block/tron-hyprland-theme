@@ -1,5 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/aaron/.dotfiles/fastfetch/.config/fastfetch'
+let g:netrw_dirhist_8='/home/aaron/.config/fastfetch'
+let g:netrw_dirhist_7='/home/aaron/.dotfiles/hypr/.config/hypr'
+let g:netrw_dirhist_6='/home'
+let g:netrw_dirhist_5='/home/aaron'
+let g:netrw_dirhist_4='/home/aaron/Documents'
 let g:netrw_dirhist_3='/home/aaron'
 let g:netrw_dirhist_2='/home/aaron/.dotfiles/kitty/.config/kitty'
 let g:netrw_dirhist_1='/home/aaron'

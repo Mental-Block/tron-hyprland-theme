@@ -40,8 +40,8 @@ border_style  = { fg = "#18CAE6" }
 
 [mode]
 
-normal_main = { fg = "#282a36", bg = "#bd93f9", bold = true }
-normal_alt  = { fg = "#bd93f9", bg = "#44475a" }
+normal_main = { fg = "#282a36", bg = "#18CAE6", bold = true }
+normal_alt  = { fg = "#18CAE6", bg = "#44475a" }
 
 # Select mode
 select_main = { fg = "#282a36", bg = "#8be9fd", bold = true }
@@ -66,7 +66,7 @@ perm_exec  = { fg = "#39FF14" }
 
 # Progress
 progress_label  = { fg = "#ffffff", bold = true }
-progress_normal = { fg = "#bd93f9", bg = "#63667d" }
+progress_normal = { fg = "#18CAE6", bg = "#63667d" }
 progress_error  = { fg = "#ff5555", bg = "#63667d" }
 
 # : }}}
@@ -75,7 +75,7 @@ progress_error  = { fg = "#ff5555", bg = "#63667d" }
 # : Pick {{{
 
 [pick]
-border   = { fg = "#bd93f9" }
+border   = { fg = "#18CAE6" }
 active   = { fg = "#ff79c6", bold = true }
 inactive = {}
 
@@ -85,7 +85,7 @@ inactive = {}
 # : Input {{{
 
 [input]
-border   = { fg = "#bd93f9" }
+border   = { fg = "#18CAE6" }
 title    = {}
 value    = {}
 selected = { reversed = true }
@@ -96,7 +96,7 @@ selected = { reversed = true }
 # : Completion {{{
 
 [cmp]
-border = { fg = "#bd93f9" }
+border = { fg = "#18CAE6" }
 
 # : }}}
 
@@ -104,7 +104,7 @@ border = { fg = "#bd93f9" }
 # : Tasks {{{
 
 [tasks]
-border  = { fg = "#bd93f9" }
+border  = { fg = "#18CAE6" }
 title   = {}
 hovered = { fg = "#ff79c6", underline = true }
 

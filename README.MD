@@ -1,11 +1,13 @@
 # Hyperland TRON themed Desktop Enviroment
 
-This is a custom riced arch linux enviroment of one of my favourite childhood movies with the software I use on a daily basis like vim, timeshift, GIMP, yazi and etc... 
+This is a custom riced arch linux enviroment of one of my favourite childhood movies. 
 
 ## Preview
 
 ![login screen](./Preview/login.png)
-![preview screen](./Preview/lock.png)
+![lock screen](./Preview/lock.png)
+![specs] (./Preview/specs.png)
+![performance monitoring] (./Preview/preformance.png)
 
 ## Set up Instructions
 
