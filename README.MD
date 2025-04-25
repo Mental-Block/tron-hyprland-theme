@@ -6,8 +6,8 @@ This is a custom riced arch linux enviroment of one of my favourite childhood mo
 
 ![login screen](./Preview/login.png)
 ![lock screen](./Preview/lock.png)
-![specs] (./Preview/specs.png)
-![performance monitoring] (./Preview/preformance.png)
+![specs](./Preview/specs.png)
+![performance monitoring](./Preview/preformance.png)
 
 ## Set up Instructions
 
